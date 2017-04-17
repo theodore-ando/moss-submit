@@ -125,7 +125,7 @@ received, especially when several queries are submitted at once.
 The `-n` option determines the number of matching files to show in the results.
 The default is 250.
 
-####### Example:
+###### Example:
 ```  
 submit.py -c java -n 200 *.java
 ```
@@ -142,6 +142,9 @@ less stable (read: may have more bugs).
 ```
 
 ## Authors
+
+- Theodore Ando - Initial Work
+- Jérémie Lumbroso - Editting
 
 ## License
 
