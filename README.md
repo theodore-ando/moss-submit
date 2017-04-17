@@ -33,7 +33,9 @@ The `-l` option specifies the source language of the tested programs.
 Moss supports many different languages; see the variable "languages" below for the
 full list.
 
-Example: Compare the lisp programs foo.lisp and bar.lisp:
+#### Language Options
+
+###### Minimal Example: Compare the lisp programs foo.lisp and bar.lisp:
 ```
    submit.py -l lisp foo.lisp bar.lisp
 ```
@@ -41,40 +43,52 @@ The `-d` option specifies that submissions are by directory, not by file.
 That is, files in a directory are taken to be part of the same program,
 and reported matches are organized accordingly by directory.
 
-Example: Compare the programs foo and bar, which consist of .c and .h
+#### Submission Directory
+
+###### Example: Grouping by Directory
+Compare the programs foo and bar, which consist of .c and .h 
 files in the directories foo and bar respectively.
 ```
    submit.py -d foo/*.c foo/*.h bar/*.c bar/*.h
 ```
-Example: Each program consists of the *.c and *.h files in a directory under
+###### Example: Grouping by Directory Batch
+Each program consists of the *.c and *.h files in a directory under
 the directory "assignment1."
 ```
    submit.py -d assignment1/*/*.h assignment1/*/*.c
 ```
-The `-b` option names a "base file".  Moss normally reports all code
+
+#### Base Files
+
+The `-b` option names a "base file."  Moss normally reports all code
 that matches in pairs of files.  When a base file is supplied,
 program code that also appears in the base file is not counted in matches.
 A typical base file will include, for example, the instructor-supplied
-code for an assignment.  Multiple -b options are allowed.  You should
+code for an assignment.  Multiple `-b` options are allowed.  You should
 use a base file if it is convenient; base files improve results, but
 are not usually necessary for obtaining useful information.
 
-IMPORTANT: Unlike previous versions of moss, the -b option *always*
-takes a single filename, even if the -d option is also used.
+IMPORTANT: Unlike previous versions of moss, the `-b` option *always*
+takes a single filename, even if the `-d` option is also used.
 
-Examples:
+###### Example: Single Base File
 
- Submit all of the C++ files in the current directory, using skeleton.cc
+ Submit all of the C++ files in the current directory, using `skeleton.cc`
  as the base file:
-
+```
    submit.py -l cc -b skeleton.cc *.cc
+```
 
+###### Example: Multiple Base Files
  Submit all of the ML programs in directories asn1.96/* and asn1.97/*, where
  asn1.97/instructor/example.ml and asn1.96/instructor/example.ml contain the base files.
-
+```
    submit.py -l ml -b asn1.97/instructor/example.ml -b asn1.96/instructor/example.ml -d asn1.97/*/*.ml asn1.96/*/*.ml
+```
 
-The -m option sets the maximum number of times a given passage may appear
+#### Max Matches
+
+The `-m` option sets the maximum number of times a given passage may appear
 before it is ignored.  A passage of code that appears in many programs
 is probably legitimate sharing and not the result of plagiarism.  With -m N,
 any passage appearing in more than N programs is treated as if it appeared in
