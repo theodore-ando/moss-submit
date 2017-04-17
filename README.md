@@ -11,11 +11,17 @@ This script is a python implementation of the submission script for MOSS (Measur
 
 ## Getting Started
 
-#### Prerequisites
+These steps will get you working either locally for development purposes or in a production pipeline.
 
-#### Installation
+### Prerequisites
 
-#### Usage
+You will need the python library [`click`](http://click.pocoo.org/5/) to use this script.  To install, simply `pip install click`.
+
+You will also need a MOSS account, which you can get by following the instructions [here](http://moss.stanford.edu). 
+
+### Installation
+
+### Usage
 
 ## Authors
 
