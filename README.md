@@ -153,3 +153,6 @@ Copyright (c) 1997 The Regents of the University of California. All rights reser
 See [`LICENSE`](./LICENSE) for more info.
 
 ## Acknowledgements
+
+This script was based on a perl script published by the maintainers of MOSS.  
+The original can be found [here](http://moss.stanford.edu/general/scripts.html).

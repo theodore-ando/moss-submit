@@ -175,8 +175,6 @@ SERVER = 'moss.stanford.edu'
 PORT = 7690
 NOREQ = "Request not sent."
 
-USERID = 123456789
-
 
 @click.command()
 @click.option("--language", "-l", default="c", help="Source file language")
