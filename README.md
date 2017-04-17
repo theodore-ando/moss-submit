@@ -6,7 +6,7 @@ This script is a python implementation of the submission script for MOSS (Measur
 
 1. [Getting Started](https://github.com/theodore-ando/moss-submit#getting-started)
 2. [Authors](https://github.com/theodore-ando/moss-submit#authors)
-3. [License](https://github.com/theodore-ando/moss-submit#license)
+3. [License](https://github.com/theodore-ando/moss-submit#license-and-copyright)
 4. [Acknowledgements](https://github.com/theodore-ando/moss-submit#acknowledgements)
 
 ## Getting Started
@@ -146,6 +146,10 @@ less stable (read: may have more bugs).
 - Theodore Ando - Initial Work
 - Jérémie Lumbroso - Editting
 
-## License
+## License and Copyright
+
+Copyright (c) 1997 The Regents of the University of California. All rights reserved.
+
+See [`LICENSE`](./LICENSE) for more info.
 
 ## Acknowledgements
