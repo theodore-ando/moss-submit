@@ -1,5 +1,5 @@
 #!/bin/python
-
+from __future__ import print_function
 # Author: Theodore Ando
 # Institution: Princeton University
 # The following script was translated to python from a perl script published by
@@ -159,8 +159,6 @@ USERID = 123456789
 #
 # STOP.  It should not be necessary to change anything below this line
 # to use the script.
-
-from __future__ import print_function
 
 import click
 import os
